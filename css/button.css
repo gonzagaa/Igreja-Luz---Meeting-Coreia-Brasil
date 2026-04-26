@@ -1,0 +1,103 @@
+/* From Uiverse.io by adeladel522 */ 
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    background: #D25A37;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #f6ded7;
+    gap: 10px;
+    outline: none;
+    overflow: hidden;
+    text-transform: uppercase;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    border: none;
+
+    transition: all 300ms ease-in-out;
+
+    margin-top: 3rem;
+  }
+
+  
+  .button .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover,
+  #rd-button-m5in9w3x.rd-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before,
+  #rd-button-m5in9w3x.rd-button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before,
+  #rd-button-m5in9w3x.rd-button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+    animation: shine 2s ease-out infinite;
+
+  }
+
+  @media (min-width: 1080px) {
+    a {
+      width: initial;
+    }
+    button.button {
+        width: initial;
+        padding: 2rem 4rem;
+        font-size: 18px;
+    }
+
+    section#cadastro #rd-button-m5in9w3x.rd-button {
+      padding: 2rem 4.5rem;
+        font-size: 22px;
+    }
+
+    header#home a button img {
+      margin-top: -.25rem;
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
