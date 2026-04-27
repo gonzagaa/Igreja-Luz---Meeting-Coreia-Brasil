@@ -5,7 +5,11 @@
     padding-bottom: 3rem;
 }
 
-#info img.bg {
+#carrossel {
+    position: relative;
+}
+
+#carrossel img.bg {
     position: absolute;
     width: 300%;
     z-index: 0;
@@ -87,7 +91,7 @@
         font-size: 1.8rem;
     }
 
-    section#info img.bg {
+    section#carrossel img.bg {
         width: 100%;
         opacity: .3;
     }

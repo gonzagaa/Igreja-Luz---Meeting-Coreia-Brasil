@@ -113,6 +113,36 @@ if (larguraDaTela < 800) {
 swiper4.autoplay.stop();
 
 
+// ===== SWIPER CARROSSEL (#carrossel) =====
+const swiperCarrossel = new Swiper(".mySwiperCarrossel", {
+  loop: true,
+  grabCursor: true,
+  speed: 1100,
+  slidesPerView: 1,
+  spaceBetween: 16,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  allowTouchMove: true,
+  breakpoints: {
+    1080: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+  },
+  navigation: {
+    nextEl: ".carrossel-next",
+    prevEl: ".carrossel-prev",
+  },
+  pagination: {
+    el: ".carrossel-pagination",
+    clickable: true,
+  },
+});
+
+
 // ===== OBSERVER =====
 // troque pelos seletores reais das seções
 const secaoSwiper3 = document.querySelector("#depoimentos");

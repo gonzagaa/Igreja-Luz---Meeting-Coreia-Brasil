@@ -31,6 +31,11 @@ const animatedSelectors = [
   '#home .box h3',
   '#home .box p',
   '.divisa',
+  '#carrossel .swiper',
+  '#carrossel .swiper-button-prev',
+  '#carrossel .swiper-button-next',
+  '#carrossel .carrossel-pagination',
+  '#carrossel .carrossel-instagram',
   '#info .box',
   '#info .box p',
   '.button',
@@ -47,6 +52,8 @@ if (prefersReducedMotion) {
   gsap.set('#home img.logo', { opacity: 0, y: 30 });
   gsap.set(['#home .box h2', '#home .box h1', '#home .box h3', '#home .box p'], { opacity: 0, y: 20 });
   gsap.set('.divisa', { opacity: 0 });
+  gsap.set('#carrossel .swiper', { opacity: 0, y: 30 });
+  gsap.set(['#carrossel .carrossel-pagination', '#carrossel .carrossel-instagram'], { opacity: 0, y: 15 });
   gsap.set('#info .box', { opacity: 0, y: 30 });
   gsap.set('#info .box p', { opacity: 0, y: 20 });
   gsap.set('#info .box h2', { '--line-scale': 0 });
@@ -74,6 +81,23 @@ if (prefersReducedMotion) {
       start: 'top 85%',
     },
   });
+
+  // ===== #CARROSSEL =====
+  const carrosselTl = gsap.timeline({
+    defaults: { ease: 'power3.out' },
+    scrollTrigger: {
+      trigger: '#carrossel',
+      start: 'top 85%',
+    },
+  });
+
+  carrosselTl
+    .to('#carrossel .swiper', { opacity: 1, y: 0, duration: 1.1 })
+    .to(
+      ['#carrossel .carrossel-pagination', '#carrossel .carrossel-instagram'],
+      { opacity: 1, y: 0, duration: 0.8, stagger: 0.15 },
+      0.3
+    );
 
   // ===== #INFO — boxes individuais =====
   gsap.utils.toArray('#info .box').forEach((box) => {

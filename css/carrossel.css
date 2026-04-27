@@ -1,0 +1,152 @@
+#carrossel {
+    width: 100%;
+    background: #D0C7B4;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+#carrossel .mySwiperCarrossel {
+    width: 100%;
+    cursor: grab;
+}
+
+#carrossel .mySwiperCarrossel:active {
+    cursor: grabbing;
+}
+
+#carrossel .swiper-slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#carrossel .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+
+    border-radius: 2rem;
+}
+
+/* ===== Setas (navigation) ===== */
+#carrossel .swiper-button-prev,
+#carrossel .swiper-button-next {
+    display: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #514243;
+    opacity: 0.6;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.18));
+    transition: opacity 300ms ease, color 300ms ease;
+    z-index: 10;
+}
+
+#carrossel .swiper-button-prev { left: 1.5rem; }
+#carrossel .swiper-button-next { right: 1.5rem; }
+
+#carrossel .swiper-button-prev::after,
+#carrossel .swiper-button-next::after {
+    content: '';
+    display: none;
+}
+
+#carrossel .swiper-button-prev ion-icon,
+#carrossel .swiper-button-next ion-icon {
+    font-size: 2.4rem;
+}
+
+#carrossel .swiper-button-prev:hover,
+#carrossel .swiper-button-next:hover {
+    opacity: 1;
+    color: #A35846;
+}
+
+#carrossel .swiper-button-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* ===== Pagination (dots) ===== */
+#carrossel .carrossel-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+    line-height: 1;
+}
+
+#carrossel .carrossel-pagination .swiper-pagination-bullet {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0;
+    background: #514243;
+    opacity: 0.6;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 300ms ease, opacity 300ms ease, transform 300ms ease;
+    display: inline-block;
+}
+
+#carrossel .carrossel-pagination .swiper-pagination-bullet:hover {
+    opacity: 1;
+}
+
+#carrossel .carrossel-pagination .swiper-pagination-bullet-active {
+    background: #A35846;
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+/* ===== Botão Instagram ===== */
+#carrossel a.carrossel-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+    color: #514243 !important;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 300ms ease;
+    
+}
+
+#carrossel .carrossel-instagram ion-icon {
+    font-size: 1.8rem;
+}
+
+#carrossel .carrossel-instagram:hover {
+    color: #A35846;
+}
+
+@media (min-width: 1080px) {
+    #carrossel {
+        padding-block: 6rem;
+
+    }
+
+    #carrossel {
+
+    }
+
+    #carrossel .mySwiperCarrossel {
+        height: 60vh;
+    }
+
+    #carrossel .swiper-button-prev,
+    #carrossel .swiper-button-next {
+        display: flex;
+    }
+
+    #carrossel .carrossel-instagram {
+        font-size: 1.6rem;
+    }
+}
