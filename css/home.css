@@ -90,7 +90,8 @@
 #home h3 span {
   background: #514243;
   color: #D0C7B4;
-  padding: 0 .5rem;
+  padding: .3rem .7rem;
+  border-radius: 2rem;
 }
 
 #home p {

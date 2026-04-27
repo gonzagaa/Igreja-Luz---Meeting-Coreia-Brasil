@@ -66,6 +66,10 @@
     margin-top: 1rem;
 }
 
+#info .box p span {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
 @media (min-width: 1080px) {
     section#info .content {
         padding-inline: 15%;
