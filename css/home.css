@@ -12,11 +12,25 @@
 
 .divisa {
   background: #514243;
-  padding-block: 1rem;
+  padding: 3rem;
 }
 
 .divisa img {
   width: 3rem;
+}
+
+.divisa h2 {
+  color: #D0C7B4;
+  font-family: 'Gilroy-Light', sans-serif;
+  font-size: 2.3rem;
+
+  margin-left: 1rem;
+
+  line-height: 1.1;
+}
+
+.divisa h2 span {
+  font-family: 'Gilroy-Medium', sans-serif;
 }
 
 #home .wrapper {
