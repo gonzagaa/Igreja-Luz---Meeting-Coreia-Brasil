@@ -11,7 +11,7 @@
 }
 
 #footer img {
-    width: 13.5rem;
+    width: 100%;
 }
 
 #footer img.av {
@@ -27,7 +27,7 @@
     margin-bottom: 2rem;
 }
 
-#footer .head::Before {
+/* #footer .head::Before {
     content: '';
     position: absolute;
     width: 1px;
@@ -36,7 +36,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     top: 0;
-}
+} */
 
 #footer p {
     color: #e0d9ca;
@@ -66,6 +66,10 @@
         justify-content: space-between;
 
         padding-inline: 15%;
+    }
+
+    footer#footer .head img {
+        width: 25rem;
     }
 
     footer#footer .content .head {
